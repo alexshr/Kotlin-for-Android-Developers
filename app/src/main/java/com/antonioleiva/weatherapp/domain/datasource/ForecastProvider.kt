@@ -6,7 +6,7 @@ import com.antonioleiva.weatherapp.domain.model.Forecast
 import com.antonioleiva.weatherapp.domain.model.ForecastList
 import com.antonioleiva.weatherapp.extensions.firstResult
 
-class ForecastProvider(private val sources: List<ForecastDataSource> = ForecastProvider.SOURCES) {
+class ForecastProvider(private val sources: List<ForecastDataSource> = SOURCES) {
 
     companion object {
         const val DAY_IN_MILLIS = 1000 * 60 * 60 * 24
