@@ -3,12 +3,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-
-    //https://stackoverflow.com/a/47509465/2886841
-    packagingOptions {
-        exclude 'META-INF/atomicfu.kotlin_module'
-    }
-
     compileSdkVersion 28
 
     defaultConfig {
@@ -40,7 +34,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "org.jetbrains.anko:anko-common:$anko_version"
     implementation "org.jetbrains.anko:anko-sqlite:$anko_version"
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.1'
     implementation "com.google.code.gson:gson:2.8.5"
     implementation "com.squareup.picasso:picasso:2.5.2"
 
